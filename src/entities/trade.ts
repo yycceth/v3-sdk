@@ -12,7 +12,7 @@ import {
   wrappedCurrencyAmount,
   Token,
   computePriceImpact
-} from '@uniswap/sdk-core'
+} from '@chun_11/sdk-core'
 import invariant from 'tiny-invariant'
 import { ONE, ZERO } from '../internalConstants'
 import { Pool } from './pool'
@@ -303,8 +303,8 @@ export class Trade<TInput extends Currency, TOutput extends Currency, TTradeType
     const chainId: ChainId | undefined = nextAmountIn.currency.isToken
       ? nextAmountIn.currency.chainId
       : currencyOut.isToken
-      ? (currencyOut as Token).chainId
-      : undefined
+        ? (currencyOut as Token).chainId
+        : undefined
     invariant(chainId !== undefined, 'CHAIN_ID')
 
     const amountIn = wrappedCurrencyAmount(nextAmountIn, chainId)
@@ -389,8 +389,8 @@ export class Trade<TInput extends Currency, TOutput extends Currency, TTradeType
     const chainId: ChainId | undefined = nextAmountOut.currency.isToken
       ? nextAmountOut.currency.chainId
       : currencyIn.isToken
-      ? currencyIn.chainId
-      : undefined
+        ? currencyIn.chainId
+        : undefined
     invariant(chainId !== undefined, 'CHAIN_ID')
 
     const amountOut = wrappedCurrencyAmount(nextAmountOut, chainId)

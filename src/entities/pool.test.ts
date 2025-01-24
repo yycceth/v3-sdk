@@ -1,4 +1,4 @@
-import { ChainId, Token, CurrencyAmount, WETH9, currencyEquals } from '@uniswap/sdk-core'
+import { ChainId, Token, CurrencyAmount, WETH9, currencyEquals } from '@chun_11/sdk-core'
 import { FeeAmount, TICK_SPACINGS } from '../constants'
 import { nearestUsableTick } from '../utils/nearestUsableTick'
 import { TickMath } from '../utils/tickMath'

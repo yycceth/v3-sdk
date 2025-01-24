@@ -1,4 +1,4 @@
-import { ChainId, Token } from '@uniswap/sdk-core'
+import { ChainId, Token } from '@chun_11/sdk-core'
 import { FeeAmount } from '../constants'
 import { computePoolAddress } from './computePoolAddress'
 

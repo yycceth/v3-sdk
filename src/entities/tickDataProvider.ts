@@ -1,4 +1,4 @@
-import { BigintIsh } from '@uniswap/sdk-core'
+import { BigintIsh } from '@chun_11/sdk-core'
 
 /**
  * Provides information about ticks

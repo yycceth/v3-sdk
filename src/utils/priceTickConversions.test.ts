@@ -1,4 +1,4 @@
-import { ChainId, Price, Token } from '@uniswap/sdk-core'
+import { ChainId, Price, Token } from '@chun_11/sdk-core'
 import { tickToPrice } from './index'
 import { priceToClosestTick } from './priceTickConversions'
 
